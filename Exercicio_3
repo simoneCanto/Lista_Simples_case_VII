@@ -1,0 +1,13 @@
+cardapio = []
+x = input('Insira o produto desejado: ')
+cardapio.append(x)
+while x:
+  y = input('Deseja inserir mais produtos?(s/n) ')
+  if y == 's':
+    x = input('Insira o produto desejado: ')
+    cardapio.append(x)
+  else:
+    print('O cardapio digitado é:')
+    break
+
+print(cardapio)
