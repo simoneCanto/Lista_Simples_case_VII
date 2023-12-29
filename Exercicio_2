@@ -1,0 +1,18 @@
+itens = ('Lanche', 'Refri', 'Batata', 'Bombom')
+preco = (10.9, 5.40, 8.30, 3.40)
+qtdComprada = [0, 3, 2, 4]
+
+qtdComprada[0] = int(input('Quantos Lanches quer comprar? '))
+qtdComprada[1] = int(input('Quantos Refris quer comprar? '))
+qtdComprada[2] = int(input('Quantas Batatas quer comprar? '))
+qtdComprada[3] = int(input('Quantos Bombons quer comprar? '))
+
+l3 = []
+soma = 0
+
+for v1, v2 in zip(preco, qtdComprada):
+  l3.append(v1 * v2)
+for i in l3:
+  soma += i
+  
+print(round(soma,2))
